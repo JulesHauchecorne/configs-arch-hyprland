@@ -1,13 +1,8 @@
 window:
-  opacity: 0.75
+  opacity: 0.9
 
-scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-  history: 10000
-
-shell:
-  #  program: /bin/zsh
-    program: /bin/fish
 font:
   size: 12
+
+shell:
+  program: /bin/fish

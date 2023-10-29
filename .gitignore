@@ -1,0 +1,14 @@
+# ignore everything
+/*
+# except
+!/nvim
+!/alacritty
+!/fish
+!/i3
+!/tmux
+!compton.conf
+!/bin
+# !starship.toml
+
+
+!.gitignore

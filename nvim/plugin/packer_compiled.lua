@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/jules/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/jules/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -200,6 +205,21 @@ _G.packer_plugins = {
     path = "/home/jules/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
+  },
   ["nvim-jdtls"] = {
     loaded = true,
     path = "/home/jules/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
@@ -245,6 +265,16 @@ _G.packer_plugins = {
     path = "/home/jules/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
+  ["rest.nvim"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/rest.nvim",
+    url = "https://github.com/rest-nvim/rest.nvim"
+  },
+  ["telescope-dap.nvim"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
+    url = "https://github.com/nvim-telescope/telescope-dap.nvim"
+  },
   ["telescope-ui-select.nvim"] = {
     loaded = true,
     path = "/home/jules/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim",
@@ -260,10 +290,25 @@ _G.packer_plugins = {
     path = "/home/jules/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-monokai"] = {
     loaded = true,
     path = "/home/jules/.local/share/nvim/site/pack/packer/start/vim-monokai",
     url = "https://github.com/crusoexia/vim-monokai"
+  },
+  ["vim-rest-console"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/vim-rest-console",
+    url = "https://github.com/diepm/vim-rest-console"
+  },
+  ["vim-test"] = {
+    loaded = true,
+    path = "/home/jules/.local/share/nvim/site/pack/packer/start/vim-test",
+    url = "https://github.com/vim-test/vim-test"
   },
   ["vim-vsnip"] = {
     loaded = true,
