@@ -86,6 +86,7 @@ use({
 })
 -- auto tags
 use("windwp/nvim-ts-autotag")
+use("tpope/vim-surround")
 
 -- Telescope ui on nvim core , ex: code actions
 use({ "nvim-telescope/telescope-ui-select.nvim" })
@@ -144,6 +145,13 @@ use("onsails/lspkind.nvim")
 
  -- packer
  --    use({ "folke/noice.nvim", requires = {{ "MunifTanjim/nui.nvim" }, { "rcarriga/nvim-notify"} }})
+
+ -- Database
+    use('tpope/vim-dadbod')
+    use('kristijanhusak/vim-dadbod-ui')
+    use("kristijanhusak/vim-dadbod-completion")
+
+
  -- Debugger
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use 'theHamsta/nvim-dap-virtual-text'
