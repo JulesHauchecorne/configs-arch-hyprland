@@ -1,4 +1,4 @@
-vim.cmd("let g:ultest_deprecation_notice = 0")
+--vim.cmd("let g:ultest_deprecation_notice = 0")
 -- for faster diagnostic on hover
 vim.o.updatetime = 250
 vim.opt.nu = true
@@ -18,7 +18,7 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "no"
+vim.opt.signcolumn = "auto"
 vim.opt.errorbells = false
 vim.cmd('colorscheme  gruvbox')
 vim.cmd('hi statusline guibg=NONE gui=NONE')
@@ -27,9 +27,18 @@ vim.cmd('hi Pmenu guibg=NONE gui=NONE')
 vim.cmd('hi normal guibg=NONE ctermbg=NONE')
 vim.cmd('highlight clear NormalFloat')
 vim.cmd('highlight clear LineNr')
-vim.cmd('highlight clear SignColumn')
+vim.cmd('highlight SignColumn guibg=NONE ')
+vim.api.nvim_set_hl(0, "DiagnosticError", {  bg="none" })
+vim.api.nvim_set_hl(0, "DiagnosticSignError", {  bg="none" })
+vim.api.nvim_set_hl(0, "DiagnosticSignHint", {   bg="none" })
+vim.api.nvim_set_hl(0, "DiagnosticSignInfo", {   bg="none" })
+vim.api.nvim_set_hl(0, "DiagnosticSignWarn", {   bg="none" })
+
+
+
 vim.api.nvim_set_hl(0,"TelescopeNormal",{bg="none"})
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.opt.termguicolors = true
+
 
