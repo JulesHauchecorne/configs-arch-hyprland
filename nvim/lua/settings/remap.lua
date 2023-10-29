@@ -6,16 +6,16 @@ vim.keymap.set( "i", "kk", "<Esc>" )
 ---- file tree
 vim.keymap.set( "n", "<leader>pv", vim.cmd.NvimTreeOpen )
 vim.keymap.set( "n", "<leader>ps", vim.cmd.NvimTreeFindFileToggle )
---
----- move visual selection
+
+-- move visual selection
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
---
----- keep search term in the middle
+
+-- keep search term in the middle
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
---
----- next greatest remap ever : asbjornHaland
+
+-- next greatest remap ever : asbjornHaland
 vim.keymap.set( 'v', '<leader>y', [["+y]])
 vim.keymap.set("n", "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
@@ -47,9 +47,7 @@ vim.keymap.set('n' , '<leader>md' , ':MarkdownPreview<CR>' , opts)
 vim.cmd("let g:user_emmet_leader_key=',' ")
 --
 ---- rest api
---vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
---
----- vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float()')
-----
---
+----vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
+
+-- vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float()')
 --
