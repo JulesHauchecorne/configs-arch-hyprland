@@ -8,7 +8,9 @@
 !/tmux
 !compton.conf
 !/bin
-# !starship.toml
+!compton.conf
+!/zsh 
+
 
 
 !.gitignore
