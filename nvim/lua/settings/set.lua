@@ -1,6 +1,6 @@
 --vim.cmd("let g:ultest_deprecation_notice = 0")
 -- for faster diagnostic on hover
-vim.o.updatetime = 250
+vim.o.updatetime = 50
 vim.opt.nu = true
 vim.opt.hidden = true
 vim.opt.relativenumber = true
@@ -21,6 +21,7 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "auto"
 vim.opt.errorbells = false
 vim.cmd('colorscheme  gruvbox')
+--vim.cmd('colorscheme  rose-pine')
 vim.cmd('hi statusline guibg=NONE gui=NONE')
 vim.cmd('hi statusline ctermbg=NONE cterm=NONE')
 vim.cmd('hi Pmenu guibg=NONE gui=NONE')

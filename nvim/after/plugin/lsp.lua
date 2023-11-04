@@ -4,7 +4,7 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
   'tsserver',
-  'eslint',
+--  'eslint',
   'lua_ls'
 })
 

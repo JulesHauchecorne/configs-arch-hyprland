@@ -53,9 +53,16 @@ return require("packer").startup(function(use)
 
 	use("nvim-tree/nvim-tree.lua")
 	-- colorscheme
-	use("crusoexia/vim-monokai")
-	use("arcticicestudio/nord-vim")
-	use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
+	--use("crusoexia/vim-monokai")
+	--use("arcticicestudio/nord-vim")
+ use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
+	--   use({
+	--   'rose-pine/neovim',
+	--   as = 'rose-pine',
+	--   config = function()
+	-- 	  vim.cmd('colorscheme rose-pine')
+	--   end
+	--   })
 
 	-- html quickness
 	use("mattn/emmet-vim")
@@ -65,7 +72,7 @@ return require("packer").startup(function(use)
 	-- use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
 	-- git blame on line
-	use("tveskag/nvim-blame-line")
+	--use("tveskag/nvim-blame-line")
 
 	-- ez commenting
 	use("terrortylor/nvim-comment")
@@ -74,27 +81,27 @@ return require("packer").startup(function(use)
 	-- use { "rafcamlet/tabline-framework.nvim",  requires = "kyazdani42/nvim-web-devicons" }
 
 	-- buffer tab line
-	use({ "akinsho/bufferline.nvim", tag = "*" })
+--	use({ "akinsho/bufferline.nvim", tag = "*" })
 
-	-- auto closing brackets
+	-- auto closing pairs
 	use({
 		"windwp/nvim-autopairs",
 		config = function()
 			require("nvim-autopairs").setup({})
 		end,
 	})
-
-	-- auto tags
+--
+--	-- auto html tags <></>
 	use("windwp/nvim-ts-autotag")
 
-	use("tpope/vim-surround")
+--	use("tpope/vim-surround")
 
 	-- Telescope ui on nvim core , ex: code actions
 	use({ "nvim-telescope/telescope-ui-select.nvim" })
 
 	-- formatting and code action
-	use({ "jose-elias-alvarez/null-ls.nvim" })
-	use("MunifTanjim/prettier.nvim")
+	--use({ "jose-elias-alvarez/null-ls.nvim" })
+--	use("MunifTanjim/prettier.nvim")
 
 	-- lsp signature, parameter support for functions
 	-- use { "ray-x/lsp_signature.nvim" }
@@ -103,13 +110,13 @@ return require("packer").startup(function(use)
 	use("norcalli/nvim-colorizer.lua")
 
 	-- indentation lines
-	use("lukas-reineke/indent-blankline.nvim")
+--	use("lukas-reineke/indent-blankline.nvim")
 
 	-- leetcode problems inside nvim
 	-- added this line in split.lua file
 	--  vim.cmd("wincmd x")
 	-- at line 31, so the opening window split would have code window largest.
-	use("Dhanus3133/LeetBuddy.nvim")
+--	use("Dhanus3133/LeetBuddy.nvim")
 
 	-- REST api testing routes without postman
 	-- for rest files
