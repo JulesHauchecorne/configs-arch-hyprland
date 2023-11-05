@@ -1,11 +1,14 @@
-vim.g.mapleader = " "
----- esc 
-vim.keymap.set( "i", "jj", "<Esc>" )
-vim.keymap.set( "i", "kk", "<Esc>" )
+-- make all keymaps silent by default
+local keymap_set = vim.keymap.set
+vim.keymap.set = function(mode, lhs, rhs, opts)
+    opts = opts or {}
+    opts.silent = opts.silent ~= false
+    return keymap_set(mode, lhs, rhs,  opts)
+end
+---- esc
+vim.keymap.set("i", "jj", "<Esc>")
+vim.keymap.set("i", "kk", "<Esc>")
 --
----- file tree
-vim.keymap.set( "n", "<leader>pv", vim.cmd.NvimTreeOpen )
-vim.keymap.set( "n", "<leader>ps", vim.cmd.NvimTreeFindFileToggle )
 
 -- move visual selection
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -27,12 +30,12 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 --
 ---- windows nav
-vim.keymap.set('n', '<leader>h', ':wincmd h<CR>', opts )
-vim.keymap.set('n', '<leader>l', ':wincmd l<CR>', opts )
-vim.keymap.set('n', '<leader>k', ':wincmd k<CR>', opts )
-vim.keymap.set('n', '<leader>j', ':wincmd j<CR>', opts )
-vim.keymap.set('n', '<leader>+' , ':vertical resize +5<CR>', opts)
-vim.keymap.set('n', '<leader>-' , ':vertical resize -5<CR>', opts)
+vim.keymap.set('n', '<leader>h', ':wincmd h<CR>', opts)
+vim.keymap.set('n', '<leader>l', ':wincmd l<CR>', opts)
+vim.keymap.set('n', '<leader>k', ':wincmd k<CR>', opts)
+vim.keymap.set('n', '<leader>j', ':wincmd j<CR>', opts)
+vim.keymap.set('n', '<leader>+', ':vertical resize +5<CR>', opts)
+vim.keymap.set('n', '<leader>-', ':vertical resize -5<CR>', opts)
 --
 ---- laziness++
 vim.keymap.set('n', '<leader>x', ':wqa<CR>', opts)
@@ -44,7 +47,7 @@ vim.keymap.set('n', '//', ':noh<CR>', opt)
 --vim.keymap.set('n', '<leader>gb',  ":ToggleBlameLine<CR>", opts)
 --
 ------ Markdown preview
-vim.keymap.set('n' , '<leader>md' , ':MarkdownPreview<CR>' , opts)
+vim.keymap.set('n', '<leader>md', ':MarkdownPreview<CR>', opts)
 --
 ------ emmet leader key pour le html completion
 vim.cmd("let g:user_emmet_leader_key=',' ")
@@ -53,4 +56,6 @@ vim.cmd("let g:user_emmet_leader_key=',' ")
 vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
 
 -- vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float()')
---
+
+-- vim test
+vim.keymap.set('n', '<leader>T', ':TestFile<CR>', opts)

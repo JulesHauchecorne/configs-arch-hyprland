@@ -20,7 +20,7 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "auto"
 vim.opt.errorbells = false
-vim.cmd('colorscheme  gruvbox')
+--vim.cmd('colorscheme  gruvbox')
 --vim.cmd('colorscheme  rose-pine')
 vim.cmd('hi statusline guibg=NONE gui=NONE')
 vim.cmd('hi statusline ctermbg=NONE cterm=NONE')
@@ -34,12 +34,10 @@ vim.api.nvim_set_hl(0, "DiagnosticSignError", {  bg="none" })
 vim.api.nvim_set_hl(0, "DiagnosticSignHint", {   bg="none" })
 vim.api.nvim_set_hl(0, "DiagnosticSignInfo", {   bg="none" })
 vim.api.nvim_set_hl(0, "DiagnosticSignWarn", {   bg="none" })
-
-
-
---vim.api.nvim_set_hl(0,"TelescopeNormal",{bg="none"})
+vim.api.nvim_set_hl(0,"TelescopeNormal",{bg="none"})
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.opt.termguicolors = true
 
+-- noice errors
 
