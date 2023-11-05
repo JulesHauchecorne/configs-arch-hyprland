@@ -41,7 +41,7 @@ vim.keymap.set('n', '<leader>x', ':wqa<CR>', opts)
 vim.keymap.set('n', '//', ':noh<CR>', opt)
 --
 ---- show git blame per line
-vim.keymap.set('n', '<leader>gb',  ":ToggleBlameLine<CR>", opts)
+--vim.keymap.set('n', '<leader>gb',  ":ToggleBlameLine<CR>", opts)
 --
 ------ Markdown preview
 vim.keymap.set('n' , '<leader>md' , ':MarkdownPreview<CR>' , opts)
@@ -50,7 +50,7 @@ vim.keymap.set('n' , '<leader>md' , ':MarkdownPreview<CR>' , opts)
 vim.cmd("let g:user_emmet_leader_key=',' ")
 --
 ---- rest api
-----vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
+vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
 
 -- vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float()')
 --
