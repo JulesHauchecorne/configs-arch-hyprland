@@ -59,10 +59,11 @@ cmp.setup({
     {name = 'path'},
     {name = 'vsnip'},
     {name = 'nvim_lsp'},
-    {name = 'buffer', keyword_length = 3},
+   -- {name = 'buffer', keyword_length = 3},
     {name = 'luasnip', keyword_length = 2},
     { name = 'bootstrap' },
-    { name = 'nvim_lsp_signature_help' }, 
+    { name = 'nvim_lsp_signature_help' },
+    { name = 'vim-dadbod-completion' },
   }
 })
 

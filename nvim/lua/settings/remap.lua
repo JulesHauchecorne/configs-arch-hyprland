@@ -51,3 +51,5 @@ vim.cmd("let g:user_emmet_leader_key=',' ")
 
 -- vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float()')
 --
+-- dadbod toggle ui
+vim.keymap.set('n', '<leader>D',  ":DBUIToggle<CR>", opts)
