@@ -165,5 +165,11 @@ return {
     {
         "ThePrimeagen/harpoon",
         lazy = true
+    },
+    {
+        'ThePrimeagen/vim-be-good',
+        lazy = true,
+        cmd = 'VimBeGood'
     }
+
 }
