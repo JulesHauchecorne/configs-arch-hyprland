@@ -55,8 +55,6 @@ vim.cmd("let g:user_emmet_leader_key=',' ")
 ---- rest api
 vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
 
--- vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float()')
-
 -- vim test
 vim.keymap.set('n', '<leader>T', ':TestFile<CR>', opts)
 
