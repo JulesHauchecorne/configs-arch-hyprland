@@ -154,11 +154,16 @@ return {
             "kristijanhusak/vim-dadbod-completion",
         },
         lazy = true,
-        ft = "sql"
+        ft = { 'sql', 'mysql', 'plsql' },
+        cmd= 'DBUI'
     },
     {
         -- loading last
         "kyazdani42/nvim-web-devicons",
+        lazy = true
+    },
+    {
+        "ThePrimeagen/harpoon",
         lazy = true
     }
 }

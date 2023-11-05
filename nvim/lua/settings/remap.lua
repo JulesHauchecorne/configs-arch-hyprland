@@ -3,7 +3,7 @@ local keymap_set = vim.keymap.set
 vim.keymap.set = function(mode, lhs, rhs, opts)
     opts = opts or {}
     opts.silent = opts.silent ~= false
-    return keymap_set(mode, lhs, rhs,  opts)
+    return keymap_set(mode, lhs, rhs, opts)
 end
 ---- esc
 vim.keymap.set("i", "jj", "<Esc>")
@@ -59,3 +59,13 @@ vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
 
 -- vim test
 vim.keymap.set('n', '<leader>T', ':TestFile<CR>', opts)
+
+-- datatbase
+vim.keymap.set('n', '<leader>D', ':DBUI<CR>', opts)
+
+-- harpoon
+vim.keymap.set('n', '<leader>a', ':lua require("harpoon.mark").add_file()<CR>', opts)
+vim.keymap.set('n', '<C-e>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
+vim.keymap.set('n', '<C-h>', ':lua require("harpoon.ui").nav_file(1)<CR>', opts)
+vim.keymap.set('n', '<C-n>', ':lua require("harpoon.ui").nav_file(2)<CR>', opts)
+vim.keymap.set('n', '<C-t>', ':lua require("harpoon.ui").nav_file(3)<CR>', opts)
