@@ -1,11 +1,7 @@
-vim.g.mapleader = " "
 ---- esc 
 vim.keymap.set( "i", "jj", "<Esc>" )
 vim.keymap.set( "i", "kk", "<Esc>" )
 --
----- file tree
-vim.keymap.set( "n", "<leader>pv", vim.cmd.NvimTreeOpen )
-vim.keymap.set( "n", "<leader>ps", vim.cmd.NvimTreeFindFileToggle )
 
 -- move visual selection
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -53,4 +49,6 @@ vim.cmd("let g:user_emmet_leader_key=',' ")
 ----vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
 
 -- vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float()')
---
+
+-- vim test
+vim.keymap.set( 'n' , '<leader>T',  ':TestFile<CR>', opts)

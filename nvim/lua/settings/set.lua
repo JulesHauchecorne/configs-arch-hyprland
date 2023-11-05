@@ -20,7 +20,7 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "auto"
 vim.opt.errorbells = false
-vim.cmd('colorscheme  gruvbox')
+--vim.cmd('colorscheme  gruvbox')
 --vim.cmd('colorscheme  rose-pine')
 vim.cmd('hi statusline guibg=NONE gui=NONE')
 vim.cmd('hi statusline ctermbg=NONE cterm=NONE')
