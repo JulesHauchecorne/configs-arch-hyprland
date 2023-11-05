@@ -12,7 +12,6 @@ alias mvnnew "mvn archetype:generate -DgroupId=ToolsQA -DartifactId=MavenProject
 if [ "$CURRENT_DESKTOP" = "Hyprland" ]
 
     alias record "wf-recorder"
-
     alias lbgsamurai "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/samurai.mp4"
     alias lbgbee "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/bee.mp4"
     alias lbgfireinspace "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/fireInSpace.mp4"
