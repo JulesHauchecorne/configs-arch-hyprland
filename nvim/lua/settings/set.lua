@@ -1,6 +1,7 @@
 --vim.cmd("let g:ultest_deprecation_notice = 0")
 -- for faster diagnostic on hover
 vim.o.updatetime = 50
+vim.cmd('set ignorecase smartcase')
 vim.opt.nu = true
 vim.opt.hidden = true
 vim.opt.relativenumber = true

@@ -7,7 +7,7 @@ alias v "nvim"
 alias mvnnew "mvn archetype:generate -DgroupId=ToolsQA -DartifactId=MavenProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false"
 
 
-if [ "$CURRENT_DESKTOP" = "Hyprland" ]
+if [ "$XDG_CURRENT_DESKTOP" = "Hyprland" ]
 
     alias record "wf-recorder"
     alias lbgsamurai "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/samurai.mp4"
@@ -34,15 +34,15 @@ else
 # i3 
     alias record="ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -t 00:00:5 -i :0.0+0,0 /home/jules/Downloads/recording.mp4"
 
-    alias lbgfireinspace="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/fireInSpace.mp4"
-    alias lbgsakuralake="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/LakeSakura.mp4"
-    alias lbgsunset="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sunset.mp4"
-    alias lbgsakura="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sakura2.mp4"
-    alias lbgsakuradrop="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sakura_drop.mp4"
-    alias lbgsamurai="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/samurai.mp4"
-    alias lbgspace="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/space.mp4"
-    alias lbgbee="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/bee.mp4"
-    alias lbgring="pkill xwinwrap ; xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/bluering.mp4"
+    alias lbgfireinspace="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/fireInSpace.mp4"
+    alias lbgsakuralake="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/LakeSakura.mp4"
+    alias lbgsunset="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sunset.mp4"
+    alias lbgsakura="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sakura2.mp4"
+    alias lbgsakuradrop="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sakura_drop.mp4"
+    alias lbgsamurai="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/samurai.mp4"
+    alias lbgspace="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/space.mp4"
+    alias lbgbee="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/bee.mp4"
+    alias lbgring="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/bluering.mp4"
 
     alias bgluffy=" pkill xwinwrap ; feh --bg-fill ~/Pictures/backgrounds/luffy.jpg"
     alias bgdreamworld=" pkill xwinwrap ; feh --bg-fill ~/Pictures/backgrounds/dream_world.jpg"
