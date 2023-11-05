@@ -34,12 +34,10 @@ vim.api.nvim_set_hl(0, "DiagnosticSignError", {  bg="none" })
 vim.api.nvim_set_hl(0, "DiagnosticSignHint", {   bg="none" })
 vim.api.nvim_set_hl(0, "DiagnosticSignInfo", {   bg="none" })
 vim.api.nvim_set_hl(0, "DiagnosticSignWarn", {   bg="none" })
-
-
-
 vim.api.nvim_set_hl(0,"TelescopeNormal",{bg="none"})
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.opt.termguicolors = true
 
+-- noice errors
 

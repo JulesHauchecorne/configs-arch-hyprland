@@ -59,7 +59,7 @@ return {
             "hrsh7th/cmp-path",
             "hrsh7th/cmp-cmdline",
             "Jezda1337/cmp_bootstrap",
-            "hrsh7th/cmp-nvim-lsp-signature-help",
+           "hrsh7th/cmp-nvim-lsp-signature-help",
             "L3MON4D3/LuaSnip",
             "hrsh7th/cmp-vsnip",
         },
@@ -69,7 +69,7 @@ return {
         "nvim-tree/nvim-tree.lua",
         lazy = false,
         priority = 1001,
-  --      cmd = { 'NvimTreeFindFileToggle', 'NvimTreeOpen' },
+        --      cmd = { 'NvimTreeFindFileToggle', 'NvimTreeOpen' },
         config = function()
             require("nvim-tree").setup()
             vim.g.loaded_netrw = 1
@@ -160,7 +160,5 @@ return {
         -- loading last
         "kyazdani42/nvim-web-devicons",
         lazy = true
-
     }
-
 }
