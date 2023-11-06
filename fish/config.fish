@@ -4,12 +4,14 @@ end
 fish_vi_key_bindings
 
 alias v "nvim"
-alias mvnnew "mvn archetype:generate -DgroupId=ToolsQA -DartifactId=MavenProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false"
-
+alias mvnnew "mvn archetype:generate -DgroupId=FDM -DartifactId=MavenProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false"
+fish_add_path /home/jules/.local/bin/
 
 if [ "$XDG_CURRENT_DESKTOP" = "Hyprland" ]
 
     alias record "wf-recorder"
+
+    alias lbgshibasamurai "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/shibaSamurai.mp4"
     alias lbgsamurai "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/samurai.mp4"
     alias lbgbee "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/bee.mp4"
     alias lbgfireinspace "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/fireInSpace.mp4"
@@ -34,6 +36,7 @@ else
 # i3 
     alias record="ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -t 00:00:5 -i :0.0+0,0 /home/jules/Downloads/recording.mp4"
 
+    alias lbgshibasamurai="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/shibaSamurai.mp4"
     alias lbgfireinspace="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/fireInSpace.mp4"
     alias lbgsakuralake="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/LakeSakura.mp4"
     alias lbgsunset="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sunset.mp4"

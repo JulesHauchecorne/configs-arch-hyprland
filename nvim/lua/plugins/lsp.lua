@@ -3,7 +3,7 @@ return {
     "VonHeikemen/lsp-zero.nvim",
     branch = "v2.x",
     lazy = true,
-    ft = { "java", "lua", "c", "cpp", "js", "ts", "go", "py", "html", "css", "hs", "sql" },
+    ft = { "java", "lua", "c", "cpp", "js", "ts", "go", "py", "html", "css", "hs", "sql", "fish", "json", "xml" },
     config = function()
         local lsp = require('lsp-zero')
 
