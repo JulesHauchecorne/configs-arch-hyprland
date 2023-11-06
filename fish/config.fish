@@ -3,6 +3,8 @@ end
 
 fish_vi_key_bindings
 
+set -x LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN 1
+
 alias v "nvim"
 alias mvnnew "mvn archetype:generate -DgroupId=FDM -DartifactId=MavenProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false"
 fish_add_path /home/jules/.local/bin/
@@ -22,6 +24,7 @@ if [ "$XDG_CURRENT_DESKTOP" = "Hyprland" ]
     alias lbgring="pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/bluering.mp4" 
     alias lbgspace="pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/space.mp4" 
 
+    alias bgcherryblossom="pkill mpvpaper; pkill swaybg; swaybg -m fill -i ~/Pictures/backgrounds/cherryblossom.jpg.jpg"
     alias bgprettyface="pkill mpvpaper; pkill swaybg; swaybg -m fill -i ~/Pictures/backgrounds/pretty_girl.jpg"
     alias bgluffy="pkill mpvpaper; pkill swaybg; swaybg -m fill -i ~/Pictures/backgrounds/luffy.jpg"
     alias bgdreamworld="pkill mpvpaper; pkill swaybg; swaybg -m fill -i ~/Pictures/backgrounds/dreamworld.jpg"
@@ -34,7 +37,7 @@ if [ "$XDG_CURRENT_DESKTOP" = "Hyprland" ]
 
 else
 # i3 
-    alias record="ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -t 00:00:5 -i :0.0+0,0 /home/jules/Downloads/recording.mp4"
+    alias record="ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -t 00:10:0 -i :0.0+0,0 /home/jules/Downloads/recording.mp4"
 
     alias lbgshibasamurai="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/shibaSamurai.mp4"
     alias lbgfireinspace="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/fireInSpace.mp4"
@@ -47,6 +50,7 @@ else
     alias lbgbee="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/bee.mp4"
     alias lbgring="pkill xwinwrap ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/bluering.mp4"
 
+    alias bgcherryblossom=" pkill xwinwrap ; feh --bg-fill ~/Pictures/backgrounds/cherryblossom.jpg"
     alias bgluffy=" pkill xwinwrap ; feh --bg-fill ~/Pictures/backgrounds/luffy.jpg"
     alias bgdreamworld=" pkill xwinwrap ; feh --bg-fill ~/Pictures/backgrounds/dream_world.jpg"
     alias bglazypanda=" pkill xwinwrap ; feh --bg-fill ~/Pictures/backgrounds/lazy_panda.jpg"

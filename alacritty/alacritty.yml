@@ -18,7 +18,7 @@ font:
     family: Hack Nerd Font Mono
     style: Bold Italic
 
-  size: 11
+  size: 8
 
 shell:
   program:  /bin/fish
