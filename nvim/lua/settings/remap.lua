@@ -67,3 +67,5 @@ vim.keymap.set('n', '<C-e>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>
 vim.keymap.set('n', '<C-h>', ':lua require("harpoon.ui").nav_file(1)<CR>', opts)
 vim.keymap.set('n', '<C-n>', ':lua require("harpoon.ui").nav_file(2)<CR>', opts)
 vim.keymap.set('n', '<C-t>', ':lua require("harpoon.ui").nav_file(3)<CR>', opts)
+
+
