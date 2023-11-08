@@ -212,6 +212,7 @@ gaps inner 25
 bindsym $mod+b exec --no-startup-id brave-browser --show-app-list 
 bindsym $mod+g exec --no-startup-id google-chrome --start-fullscreen 
 bindsym $mod+p exec --no-startup-id maim "/home/jules/Downloads/screenshot.jpg" 
+bindsym $mod+Shift+p exec --no-startup-id maim -s | xclip -selection clipboard -t image/png 
 
 # chrome launch config
 bindsym $mod+c exec --no-startup-id google-chrome --show-app-list 

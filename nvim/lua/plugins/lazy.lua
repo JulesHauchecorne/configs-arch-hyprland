@@ -4,7 +4,7 @@ return {
         "nvim-telescope/telescope.nvim",
         lazy = true,
         tag = "0.1.4",
-        ft = { "java", "lua", "c", "cpp", "js", "ts", "go", "py", "html", "css", "hs", "sql" },
+        ft = { "java", "lua", "c", "cpp", "javascript", "typescript", "go", "python", "html", "css", "haskell", "sql" },
         dependencies = { "nvim-lua/plenary.nvim",
             "nvim-telescope/telescope-ui-select.nvim",
         },
@@ -59,7 +59,7 @@ return {
             "hrsh7th/cmp-path",
             "hrsh7th/cmp-cmdline",
             "Jezda1337/cmp_bootstrap",
-           "hrsh7th/cmp-nvim-lsp-signature-help",
+            "hrsh7th/cmp-nvim-lsp-signature-help",
             "L3MON4D3/LuaSnip",
             "hrsh7th/cmp-vsnip",
         },
@@ -114,7 +114,7 @@ return {
     {
         -- auto html tags <></>
         "windwp/nvim-ts-autotag",
-        ft = { "html", "js", "ts", "jsx", "tsx", "xml" }
+        ft = { "html", "javascript", "typescript", "jsx", "tsx", "xml" }
     },
     {
         "norcalli/nvim-colorizer.lua",
@@ -155,7 +155,7 @@ return {
         },
         lazy = true,
         ft = { 'sql', 'mysql', 'plsql' },
-        cmd= 'DBUI'
+        cmd = 'DBUI'
     },
     {
         -- loading last
@@ -170,6 +170,30 @@ return {
         'ThePrimeagen/vim-be-good',
         lazy = true,
         cmd = 'VimBeGood'
+    },
+    {
+        "michaelb/sniprun",
+        lazy = true,
+        ft = "python",
+        branch = "master",
+
+        build = "sh install.sh",
+        -- do 'sh install.sh 1' if you want to force compile locally
+        -- (instead of fetching a binary from the github release). Requires Rust >= 1.65
+
+        config = function()
+            require("sniprun").setup({
+                -- your options
+            })
+        end,
+    },
+    {
+        'mfussenegger/nvim-dap-python',
+        lazy = true,
+        ft = 'python',
+        config = function()
+            require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
+        end
     }
 
 }
