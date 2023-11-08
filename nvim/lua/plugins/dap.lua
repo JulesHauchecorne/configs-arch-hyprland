@@ -1,10 +1,10 @@
 return {
-    
+
      "rcarriga/nvim-dap-ui",
        dependencies = {
         "mfussenegger/nvim-dap",
         "theHamsta/nvim-dap-virtual-text",
-        "nvim-telescope/telescope-dap.nvim"
+        "nvim-telescope/telescope-dap.nvim",
        },
     lazy = true,
    config = function()

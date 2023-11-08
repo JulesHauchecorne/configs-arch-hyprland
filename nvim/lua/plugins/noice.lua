@@ -235,6 +235,30 @@ return { {
                     },
                     opts = { skip = true },
                 },
+                {
+                    filter = {
+                        event = "msg_show",
+                        kind = "",
+                        find = "was properly created",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        kind = "",
+                        find = "was properly removed",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        kind = "",
+                        find = "change detected",
+                    },
+                    opts = { skip = true },
+                },
 
             },
             --

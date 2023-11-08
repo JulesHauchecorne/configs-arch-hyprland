@@ -212,6 +212,7 @@ gaps inner 25
 bindsym $mod+b exec --no-startup-id brave-browser --show-app-list 
 bindsym $mod+g exec --no-startup-id google-chrome --start-fullscreen 
 bindsym $mod+p exec --no-startup-id maim "/home/jules/Downloads/screenshot.jpg" 
+bindsym $mod+Shift+p exec --no-startup-id maim -s | xclip -selection clipboard -t image/png 
 
 # chrome launch config
 bindsym $mod+c exec --no-startup-id google-chrome --show-app-list 
@@ -225,7 +226,7 @@ exec_always --no-startup-id compton
 #exec_always --no-startup-id  xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- gifview -w WID /home/jules/Pictures/backgrounds/gif/Sakura.gif -a   
 #exec_always --no-startup-id  xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- gifview -w WID /home/jules/Pictures/backgrounds/gif/MoonRoad.gif -a   
 
-exec_always --no-startup-id  xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/space.mp4   
+exec_always --no-startup-id  xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/space.mp4   
 # exec_always  --no-startup-id  xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sakura2.mp4
 exec_always --no-startup-id xmodmap ~/.Xmodmap
 
