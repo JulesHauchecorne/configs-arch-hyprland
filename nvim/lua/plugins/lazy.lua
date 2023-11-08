@@ -91,12 +91,15 @@ return {
     ft = "html"
 },
     {
-        -- markdown preview
         "iamcco/markdown-preview.nvim",
-        ft = "md"
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        build = "cd app && yarn install",
+        init = function()
+            vim.g.mkdp_filetypes = { "markdown" }
+        end,
+        ft = { "markdown" },
     },
-    -- ez commenting
-    {
+    { -- ez commenting
         "terrortylor/nvim-comment",
         config = function()
             require("nvim_comment").setup()
