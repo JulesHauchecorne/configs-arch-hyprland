@@ -197,6 +197,17 @@ return {
         config = function()
             require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
         end
+    },
+    {
+        'stevearc/oil.nvim',
+        lazy  = true,
+        cmd = "Oil",
+        config = function()
+            require("oil").setup({
+            })
+        end,
+        opt = vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
     }
+
 
 }
