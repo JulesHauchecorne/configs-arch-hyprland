@@ -142,7 +142,11 @@ return {
     },
     {
         "norcalli/nvim-colorizer.lua",
-        ft = "css"
+        ft = "css",
+        config = function()
+            require('colorizer').setup()
+        end
+
     },
     {
         -- REST api testing routes without postman
