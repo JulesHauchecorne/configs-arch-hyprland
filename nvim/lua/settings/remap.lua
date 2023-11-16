@@ -20,6 +20,10 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- rename
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+ 
+-- run makefile 
+
+vim.keymap.set("n", "<F10>", ":make<CR>", opts )
 
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set("v", '<leader>y', [["+y]])

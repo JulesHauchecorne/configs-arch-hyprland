@@ -24,6 +24,7 @@ if [ "$XDG_CURRENT_DESKTOP" = "Hyprland" ]
     alias lbgring="pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/bluering.mp4" 
     alias lbgspace="pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/space.mp4" 
 
+    alias bgsnowgirl="pkill mpvpaper; pkill swaybg; swaybg -m fill -i ~/Pictures/backgrounds/snowGirl.jpg"
     alias bgcherryblossom="pkill mpvpaper; pkill swaybg; swaybg -m fill -i ~/Pictures/backgrounds/cherryblossom.jpg.jpg"
     alias bgprettyface="pkill mpvpaper; pkill swaybg; swaybg -m fill -i ~/Pictures/backgrounds/pretty_girl.jpg"
     alias bgluffy="pkill mpvpaper; pkill swaybg; swaybg -m fill -i ~/Pictures/backgrounds/luffy.jpg"
@@ -50,6 +51,7 @@ else
     alias lbgbee="killall xwinwrap ; sleep 0.5 ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/bee.mp4"
     alias lbgring="killall xwinwrap ; sleep 0.5 ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/bluering.mp4"
 
+    alias bgsnowgirl=" killall xwinwrap ; sleep 0.5 ; feh --bg-fill ~/Pictures/backgrounds/snowGirl.jpg"
     alias bgcherryblossom=" killall xwinwrap ; sleep 0.5 ; feh --bg-fill ~/Pictures/backgrounds/cherryblossom.jpg"
     alias bgluffy=" killall xwinwrap ; sleep 0.5 ; feh --bg-fill ~/Pictures/backgrounds/luffy.jpg"
     alias bgdreamworld=" killall xwinwrap ; sleep 0.5 ; feh --bg-fill ~/Pictures/backgrounds/dream_world.jpg"

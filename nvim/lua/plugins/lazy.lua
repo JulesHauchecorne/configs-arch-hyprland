@@ -76,8 +76,9 @@ return {
             vim.g.loaded_netrwPlugin = 1
         end
     },
+     -- colorschemes
     {
-        -- colorschemes
+        --  GRUVBOX
         "ellisonleao/gruvbox.nvim",
         lazy = false,
         priority = 1000,
@@ -85,11 +86,31 @@ return {
         config = function()
             vim.cmd([[colorscheme gruvbox]])
         end
-    }, {
-    -- html quickness
-    "mattn/emmet-vim",
-    ft = "html"
-},
+    },
+    -- {
+    --     --  ROSE-PINE
+    --     "rose-pine/neovim",
+    --     name = 'rose-pine',
+    --     lazy = false,
+    --     priority = 1000,
+    --     config = function()
+    --         vim.cmd([[colorscheme rose-pine]])
+    --     end
+    -- },
+    -- {
+    --     --  MONOKAI
+    --     'tanvirtin/monokai.nvim',
+    --     lazy = false,
+    --     priority = 1000,
+    --     config = function()
+    --         vim.cmd([[colorscheme monokai]])
+    --     end
+    -- },
+    {
+        -- html quickness
+        "mattn/emmet-vim",
+        ft = "html"
+    },
     {
         "iamcco/markdown-preview.nvim",
         cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -200,13 +221,13 @@ return {
     },
     {
         'stevearc/oil.nvim',
-        lazy  = true,
-        cmd = "Oil",
+        lazy   = true,
+        cmd    = "Oil",
         config = function()
             require("oil").setup({
             })
         end,
-        opt = vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+        opt    = vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
     }
 
 
