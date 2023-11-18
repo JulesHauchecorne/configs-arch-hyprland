@@ -65,21 +65,19 @@ return {
         },
         lazy = true
     },
-    -- {
-    --     "nvim-tree/nvim-tree.lua",
-    --     lazy = false,
-    --     priority = 1001,
-    --     opts = {
-    --         vim.keymap.set("n", "<leader>pv", vim.cmd.NvimTreeOpen),
-    --         vim.keymap.set("n", "<leader>ps", vim.cmd.NvimTreeFindFileToggle)
-    --     },
-    --     --      cmd = { 'NvimTreeFindFileToggle', 'NvimTreeOpen' },
-    --     config = function()
-    --         require("nvim-tree").setup()
-    --         vim.g.loaded_netrw = 1
-    --         vim.g.loaded_netrwPlugin = 1
-    --     end
-    -- },
+    {
+        "nvim-tree/nvim-tree.lua",
+        lazy = true,
+        cmd = 'NvimTreeFindFileToggle',
+        opts = {
+            vim.keymap.set("n", "<leader>ps", vim.cmd.NvimTreeFindFileToggle)
+        },
+        config = function()
+            require("nvim-tree").setup()
+            vim.g.loaded_netrw = 1
+            vim.g.loaded_netrwPlugin = 1
+        end
+    },
     -- colorschemes
     {
         --  GRUVBOX
