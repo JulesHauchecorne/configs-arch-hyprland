@@ -65,18 +65,22 @@ return {
         },
         lazy = true
     },
-    {
-        "nvim-tree/nvim-tree.lua",
-        lazy = false,
-        priority = 1001,
-        --      cmd = { 'NvimTreeFindFileToggle', 'NvimTreeOpen' },
-        config = function()
-            require("nvim-tree").setup()
-            vim.g.loaded_netrw = 1
-            vim.g.loaded_netrwPlugin = 1
-        end
-    },
-     -- colorschemes
+    -- {
+    --     "nvim-tree/nvim-tree.lua",
+    --     lazy = false,
+    --     priority = 1001,
+    --     opts = {
+    --         vim.keymap.set("n", "<leader>pv", vim.cmd.NvimTreeOpen),
+    --         vim.keymap.set("n", "<leader>ps", vim.cmd.NvimTreeFindFileToggle)
+    --     },
+    --     --      cmd = { 'NvimTreeFindFileToggle', 'NvimTreeOpen' },
+    --     config = function()
+    --         require("nvim-tree").setup()
+    --         vim.g.loaded_netrw = 1
+    --         vim.g.loaded_netrwPlugin = 1
+    --     end
+    -- },
+    -- colorschemes
     {
         --  GRUVBOX
         "ellisonleao/gruvbox.nvim",
@@ -229,6 +233,7 @@ return {
         cmd    = "Oil",
         config = function()
             require("oil").setup({
+                skip_confirm_for_simple_edits = true,
             })
         end,
         opt    = vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })

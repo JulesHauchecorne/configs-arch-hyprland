@@ -1,5 +1,6 @@
 vim.keymap.set('n', '<leader>dl', ':DapLoadLaunchJSON<CR>', opts )
 vim.cmd("nnoremap <leader>dd <Cmd>lua require'dapui'.toggle()<CR>")
+vim.keymap.set('n', '<leader>dt', ':DapToggleRepl<CR>', opts )
 vim.cmd("nnoremap <leader>dc <Cmd>lua require'dap'.continue()<CR>")
 vim.cmd("nnoremap <leader>dr <Cmd>lua require'dap'.restartFrame()<CR>")
 vim.cmd("nnoremap <leader>dq <Cmd>lua require'dap'.terminate()<CR>")
