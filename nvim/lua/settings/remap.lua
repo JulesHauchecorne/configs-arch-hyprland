@@ -9,6 +9,7 @@ end
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("i", "kk", "<Esc>")
 --
+vim.keymap.set("n", "<leader>pv", ":Oil<CR>")
 
 -- move visual selection
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
