@@ -4,6 +4,10 @@ end
 fish_vi_key_bindings
 
 set -x LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN 1
+# set -x DISPLAY 172.25.240.1:0.0
+set -x DISPLAY $(ip route list default | awk '{print $3}'):0
+set -x XDG_RUNTIME_DIR /home/jules/ 
+set -x RUNLEVEL 3
 
 alias v "nvim"
 alias mvnnew "mvn archetype:generate -DgroupId=FDM -DartifactId=MavenProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false"
