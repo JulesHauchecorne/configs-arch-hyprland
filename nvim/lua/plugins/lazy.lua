@@ -43,7 +43,9 @@ return {
             pcall(vim.cmd, "MasonUpdate")
         end,
         config = function()
-            require('mason').setup()
+            require('mason').setup({
+                 ensure_installed = { "lua_ls", "tsserver", "jdtls" },
+            })
         end
     },
     -- lsp
