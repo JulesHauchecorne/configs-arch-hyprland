@@ -12,7 +12,13 @@ return {
         lsp.ensure_installed({
             'tsserver',
             --  'eslint',
-            'lua_ls'
+            'lua_ls',
+            'jdtls',
+            'clangd',
+            'gopls',
+            'cssls',
+            'html',
+            'jedi_language_server'
         })
 
         local cmp = require('cmp')

@@ -43,7 +43,7 @@ return {
             pcall(vim.cmd, "MasonUpdate")
         end,
         config = function()
-            require('mason').setup()
+            require('mason').setup ()
         end
     },
     -- lsp
