@@ -11,14 +11,14 @@ return {
 
         lsp.ensure_installed({
             'tsserver',
-            --  'eslint',
             'lua_ls',
             'jdtls',
             'clangd',
             'gopls',
             'cssls',
             'html',
-            'jedi_language_server'
+            'jedi_language_server',
+            'bash',
         })
 
         local cmp = require('cmp')
