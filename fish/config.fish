@@ -12,7 +12,7 @@ fish_add_path /home/jules/.local/bin/
 if [ "$XDG_CURRENT_DESKTOP" = "Hyprland" ]
 
     alias record "wf-recorder"
-
+    
     alias lbgshibasamurai "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/shibaSamurai.mp4"
     alias lbgsamurai "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/samurai.mp4"
     alias lbgbee "pkill mpvpaper; pkill swaybg;  mpvpaper '*' -o '--loop --no-audio' /home/jules/Pictures/backgrounds/live-wallpaper/bee.mp4"
@@ -38,6 +38,8 @@ if [ "$XDG_CURRENT_DESKTOP" = "Hyprland" ]
 
 else
 # i3 
+    alias keyboard-us="setxkbmap -layout us ; xmodmap ~/.Xmodmap"
+    alias keyboard-ca="setxkbmap -layout ca ; xmodmap ~/.Xmodmap"
     alias record="ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -t 00:10:0 -i :0.0+0,0 /home/jules/Downloads/recording.mp4"
 
     alias lbgshibasamurai="killall xwinwrap ; sleep 0.5 ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/shibaSamurai.mp4"
