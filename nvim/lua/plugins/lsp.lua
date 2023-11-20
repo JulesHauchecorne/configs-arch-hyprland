@@ -18,7 +18,6 @@ return {
             'cssls',
             'html',
             'jedi_language_server',
-            'bash',
         })
 
         local cmp = require('cmp')
