@@ -60,17 +60,14 @@ vim.cmd("let g:user_emmet_leader_key=',' ")
 ---- rest api
 vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
 
--- vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float()')
-
---
 -- dadbod toggle ui
 vim.keymap.set('n', '<leader>D',  ":DBUIToggle<CR>", opts)
 
--- vim test
-vim.keymap.set('n', '<leader>T', ':TestFile<CR>', opts)
-
 -- datatbase
 vim.keymap.set('n', '<leader>D', ':DBUI<CR>', opts)
+
+-- vim test
+vim.keymap.set('n', '<leader>T', ':TestFile<CR>', opts)
 
 -- harpoon
 vim.keymap.set('n', '<leader>a', ':lua require("harpoon.mark").add_file()<CR>', opts)
