@@ -13,7 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- set up lazy
---require("plugins")
 vim.g.mapleader = " "
 require('lazy').setup('plugins')
 require('settings')

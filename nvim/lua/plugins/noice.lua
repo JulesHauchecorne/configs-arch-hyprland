@@ -26,7 +26,7 @@ return { {
                     search_up = { kind = "search", pattern = "^%?", icon = " ", lang = "regex" },
                     filter = { pattern = "^:%s*!", icon = "$", lang = "bash" },
                     lua = { pattern = { "^:%s*lua%s+", "^:%s*lua%s*=%s*", "^:%s*=%s*" }, icon = "", lang = "lua" },
-                help = { pattern = "^:%s*he?l?p?%s+", icon = "" },
+                    help = { pattern = "^:%s*he?l?p?%s+", icon = "" },
                     input = {}, -- Used by input()
                     -- lua = false, -- to disable a format, set to `false`
                 },
@@ -120,11 +120,11 @@ return { {
                 },
                 override = {
                     -- override the default lsp markdown formatter with Noice
-                    ["vim.lsp.util.convert_input_to_markdown_lines"] = false,
+                    ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
                     -- override the lsp markdown formatter with Noice
-                    ["vim.lsp.util.stylize_markdown"] = false,
+                    ["vim.lsp.util.stylize_markdown"] = true,
                     -- override cmp documentation with Noice (needs the other options to work)
-                    ["cmp.entry.get_documentation"] = false,
+                    ["cmp.entry.get_documentation"] = true,
                 },
                 hover = {
                     enabled = false,
@@ -237,16 +237,14 @@ return { {
                 },
                 {
                     filter = {
-                        event = "msg_show",
-                        kind = "",
+                        event = "notify",
                         find = "was properly created",
                     },
                     opts = { skip = true },
                 },
                 {
                     filter = {
-                        event = "msg_show",
-                        kind = "",
+                        event = "notify",
                         find = "was properly removed",
                     },
                     opts = { skip = true },
@@ -259,7 +257,50 @@ return { {
                     },
                     opts = { skip = true },
                 },
+                {
+                    filter = {
+                        event = "notify",
+                        find = "Completed hot code replace",
 
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "notify",
+                        find = "Applying code changes",
+
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "notify",
+                        find = "Start hot code replacement procedure",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "change; before",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "search hit BOTTOM",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "Pattern not found",
+                    },
+                    opts = { skip = true },
+                },
             },
             --
             --- @see section on routes
