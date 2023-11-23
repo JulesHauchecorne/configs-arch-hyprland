@@ -237,16 +237,14 @@ return { {
                 },
                 {
                     filter = {
-                        event = "msg_show",
-                        kind = "",
+                        event = "notify",
                         find = "was properly created",
                     },
                     opts = { skip = true },
                 },
                 {
                     filter = {
-                        event = "msg_show",
-                        kind = "",
+                        event = "notify",
                         find = "was properly removed",
                     },
                     opts = { skip = true },
@@ -256,6 +254,50 @@ return { {
                         event = "msg_show",
                         kind = "",
                         find = "change detected",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "notify",
+                        find = "Completed hot code replace",
+
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "notify",
+                        find = "Applying code changes",
+
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "notify",
+                        find = "Start hot code replacement procedure",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "change; before",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "search hit BOTTOM",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "Pattern not found",
                     },
                     opts = { skip = true },
                 },
