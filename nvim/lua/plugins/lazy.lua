@@ -257,6 +257,15 @@ return {
                 -- Configuration here, or leave empty to use defaults
             })
         end
+    },
+    {
+        "Eandrju/cellular-automaton.nvim",
+        lazy = true;
+        cmd = {
+            "CellularAutomaton",
+        },
+        opt = vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>")
+
     }
 
 
