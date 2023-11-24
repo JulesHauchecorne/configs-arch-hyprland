@@ -283,6 +283,13 @@ return { {
                 {
                     filter = {
                         event = "msg_show",
+                        find = "changes; before",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
                         find = "change; before",
                     },
                     opts = { skip = true },
@@ -298,6 +305,13 @@ return { {
                     filter = {
                         event = "msg_show",
                         find = "Pattern not found",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "change; after",
                     },
                     opts = { skip = true },
                 },

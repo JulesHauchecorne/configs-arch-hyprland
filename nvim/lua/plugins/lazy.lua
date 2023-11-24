@@ -10,6 +10,12 @@ return {
         },
         config = function()
             require("telescope").setup {
+                defaults = {
+                    file_ignore_patterns = {
+                        "node_modules",
+                        "target"
+                    }
+                },
                 extensions = {
                     ["ui-select"] = {
                         require("telescope.themes").get_dropdown {
@@ -43,7 +49,7 @@ return {
             pcall(vim.cmd, "MasonUpdate")
         end,
         config = function()
-            require('mason').setup ()
+            require('mason').setup()
         end
     },
     -- lsp
@@ -236,6 +242,23 @@ return {
         end,
         opt    = vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
     },
+    {
+        "ellisonleao/glow.nvim",
+        lazy = true,
+        config = true,
+        cmd = "Glow",
+    },
+    {
+        "kylechui/nvim-surround",
+        version = "*", -- Use for stability; omit to use `main` branch for the latest features
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    }
+
 
 
 }
