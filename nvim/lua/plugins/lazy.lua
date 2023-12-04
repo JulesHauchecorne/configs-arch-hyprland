@@ -163,12 +163,18 @@ return {
         lazy = true,
         ft = "rest"
     },
-
     -- vim tests
     {
         "vim-test/vim-test",
         lazy = true,
-        cmd = "TestFile"
+        cmd = {
+            "TestFile",
+            "TestNearest"
+        },
+        opt = {
+            vim.cmd("nmap <silent> <leader>t :TestNearest<CR>"),
+            vim.cmd("nmap <silent> <leader>T :TestFile<CR>")
+        }
     },
 
     {
@@ -260,7 +266,7 @@ return {
     },
     {
         "Eandrju/cellular-automaton.nvim",
-        lazy = true;
+        lazy = true,
         cmd = {
             "CellularAutomaton",
         },

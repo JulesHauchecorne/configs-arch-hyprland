@@ -228,5 +228,7 @@ exec_always --no-startup-id feh --bg-fill ~/Pictures/backgrounds/dream_world.jpg
 
 #exec_always --no-startup-id  xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/space.mp4   
 # exec_always  --no-startup-id  xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live_wallpaper/sakura2.mp4
+
+exec_always --no-startup-id setxkbmap -layout us 
 exec_always --no-startup-id xmodmap ~/.Xmodmap
 

@@ -59,18 +59,12 @@ vim.keymap.set('n', '<leader>md', ':MarkdownPreview<CR>', opts)
 --
 ------ emmet leader key pour le html completion
 vim.cmd("let g:user_emmet_leader_key=',' ")
---
----- rest api
-vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
 
 -- dadbod toggle ui
 vim.keymap.set('n', '<leader>D',  ":DBUIToggle<CR>", opts)
 
 -- datatbase
 vim.keymap.set('n', '<leader>D', ':DBUI<CR>', opts)
-
--- vim test
-vim.keymap.set('n', '<leader>T', ':TestFile<CR>', opts)
 
 -- harpoon
 vim.keymap.set('n', '<leader>a', ':lua require("harpoon.mark").add_file()<CR>', opts)

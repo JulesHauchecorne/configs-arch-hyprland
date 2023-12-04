@@ -315,6 +315,13 @@ return { {
                     },
                     opts = { skip = true },
                 },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "lines changed",
+                    },
+                    opts = { skip = true },
+                },
             },
             --
             --- @see section on routes
