@@ -5,6 +5,7 @@ vim.keymap.set = function(mode, lhs, rhs, opts)
     opts.silent = opts.silent ~= false
     return keymap_set(mode, lhs, rhs, opts)
 end
+
 ---- esc
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("i", "kk", "<Esc>")
@@ -66,6 +67,14 @@ vim.keymap.set('n', '<leader>D',  ":DBUIToggle<CR>", opts)
 -- datatbase
 vim.keymap.set('n', '<leader>D', ':DBUI<CR>', opts)
 
+-- Run file or Makefile
+vim.cmd("silent autocmd FileType cpp nnoremap <buffer>  <leader>t  :terminal g++ %; ./a.out<CR>")
+vim.cmd("silent autocmd FileType c nnoremap <buffer>  <leader>t  :terminal gcc %; ./a.out<CR>")
+vim.cmd("silent autocmd FileType python nnoremap <buffer>  <leader>t  :terminal python3 %<CR>")
+vim.cmd("silent autocmd FileType java nnoremap <buffer>  <leader>t  :terminal javac %; java %<CR>")
+-- vim.cmd("silent autocmd FileType cpp nnoremap <buffer>  <leader>m  :!make<CR>")
+-- vim.cmd("silent autocmd FileType c nnoremap <buffer>  <leader>m  :!make<CR>")
+
 -- vim test
 vim.keymap.set('n', '<leader>T', ':TestFile<CR>', opts)
 
@@ -75,4 +84,3 @@ vim.keymap.set('n', '<C-e>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>
 vim.keymap.set('n', '<C-h>', ':lua require("harpoon.ui").nav_file(1)<CR>', opts)
 vim.keymap.set('n', '<C-n>', ':lua require("harpoon.ui").nav_file(2)<CR>', opts)
 vim.keymap.set('n', '<C-t>', ':lua require("harpoon.ui").nav_file(3)<CR>', opts)
-
