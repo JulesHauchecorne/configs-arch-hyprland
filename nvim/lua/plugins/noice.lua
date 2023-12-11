@@ -318,7 +318,28 @@ return { {
                 {
                     filter = {
                         event = "msg_show",
+                        find = "; line less",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
                         find = "lines changed",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "Nothing to rename",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "No code actions available",
                     },
                     opts = { skip = true },
                 },
