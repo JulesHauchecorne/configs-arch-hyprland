@@ -283,6 +283,13 @@ return { {
                 {
                     filter = {
                         event = "msg_show",
+                        find = "changes; before",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
                         find = "change; before",
                     },
                     opts = { skip = true },
@@ -298,6 +305,41 @@ return { {
                     filter = {
                         event = "msg_show",
                         find = "Pattern not found",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "change; after",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "; line less",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "lines changed",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "Nothing to rename",
+                    },
+                    opts = { skip = true },
+                },
+                {
+                    filter = {
+                        event = "msg_show",
+                        find = "No code actions available",
                     },
                     opts = { skip = true },
                 },

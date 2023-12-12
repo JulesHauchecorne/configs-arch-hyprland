@@ -1,5 +1,5 @@
 return {
-    -- for http files
+    -- Install jq and tidy for html and json formatting to work
     "rest-nvim/rest.nvim",
     lazy = true,
     ft = "http",
@@ -8,7 +8,7 @@ return {
             -- Open request results in a horizontal split
             result_split_horizontal = false,
             -- Keep the http file buffer above|left when split horizontal|vertical
-            result_split_in_place = false,
+            result_split_in_place = true,
             -- Skip SSL verification, useful for unknown certificates
             skip_ssl_verification = false,
             -- Encode URL before making request

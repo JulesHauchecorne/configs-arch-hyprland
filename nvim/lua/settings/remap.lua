@@ -31,6 +31,9 @@ vim.keymap.set("n", "<F10>", ":make<CR>", opts )
 vim.keymap.set("v", '<leader>y', [["+y]])
 vim.keymap.set("n", "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set("x", "<leader>p", [["_dP]])
+
+
 --
 ---- basic formatting
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
@@ -57,9 +60,6 @@ vim.keymap.set('n', '<leader>md', ':MarkdownPreview<CR>', opts)
 --
 ------ emmet leader key pour le html completion
 vim.cmd("let g:user_emmet_leader_key=',' ")
---
----- rest api
-vim.keymap.set('n', '<leader>R', '<Plug>RestNvim<CR>', opts)
 
 -- dadbod toggle ui
 vim.keymap.set('n', '<leader>D',  ":DBUIToggle<CR>", opts)

@@ -10,6 +10,12 @@ return {
         },
         config = function()
             require("telescope").setup {
+                defaults = {
+                    file_ignore_patterns = {
+                        "node_modules",
+                        "target"
+                    }
+                },
                 extensions = {
                     ["ui-select"] = {
                         require("telescope.themes").get_dropdown {
@@ -157,12 +163,18 @@ return {
         lazy = true,
         ft = "rest"
     },
-
     -- vim tests
     {
         "vim-test/vim-test",
         lazy = true,
-        cmd = "TestFile"
+        cmd = {
+            "TestFile",
+            "TestNearest"
+        },
+        opt = {
+            vim.cmd("nmap <silent> <leader>t :TestNearest<CR>"),
+            vim.cmd("nmap <silent> <leader>T :TestFile<CR>")
+        }
     },
 
     {
@@ -236,6 +248,32 @@ return {
         end,
         opt    = vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
     },
+    {
+        "ellisonleao/glow.nvim",
+        lazy = true,
+        config = true,
+        cmd = "Glow",
+    },
+    {
+        "kylechui/nvim-surround",
+        version = "*", -- Use for stability; omit to use `main` branch for the latest features
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    },
+    {
+        "Eandrju/cellular-automaton.nvim",
+        lazy = true,
+        cmd = {
+            "CellularAutomaton",
+        },
+        opt = vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>")
+
+    }
+
 
 
 }
