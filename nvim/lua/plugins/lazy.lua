@@ -117,7 +117,7 @@ return {
     {
         -- html quickness
         "mattn/emmet-vim",
-        ft = "html"
+        ft = { "html", "javascript", "typescript", "javascriptreact", "typescriptreact" }
     },
     {
         "iamcco/markdown-preview.nvim",
@@ -264,7 +264,13 @@ return {
             })
         end
     },
+    -- {
+    --     "pmizio/typescript-tools.nvim",
+    --     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    --     opts = {},
+    -- },
     {
+        -- random shit
         "Eandrju/cellular-automaton.nvim",
         lazy = true,
         cmd = {
