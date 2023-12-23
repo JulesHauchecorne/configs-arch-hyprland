@@ -219,7 +219,7 @@ bindsym $mod+c exec --no-startup-id google-chrome --show-app-list
 for_window [instance="chrome_app_list" window_role="bubble"] floating enable
 exec_always --no-startup-id compton 
 
-exec_always --no-startup-id feh --bg-fill ~/Pictures/backgrounds/dream_world.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/backgrounds/ubuntu.jpg
 #exec_always --no-startup-id  xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- gifview -w WID test.gif -a   
 # resize gif with gifsicle --scale 3.0 gif.gif > newgif.gif
 #exec_always --no-startup-id  xwinwrap -g 1920x10800 -fs -ov -ni -s -nf -- gifview -w WID /home/jules/Pictures/backgrounds/gif/City.gif -a   
