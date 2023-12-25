@@ -53,6 +53,7 @@ else
     alias lbgbee="killall xwinwrap ; sleep 0.5 ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live-wallpaper/bee.mp4"
     alias lbgring="killall xwinwrap ; sleep 0.5 ; xwinwrap -g 1920x1080 -fs -ov -ni -s -nf -- mpv -wid WID --loop --no-audio /home/jules/Pictures/backgrounds/live-wallpaper/bluering.mp4"
 
+    alias bgblack=" killall xwinwrap ; sleep 0.5 ; feh --bg-fill ~/Pictures/backgrounds/black.jpg"
     alias bgsnowgirl=" killall xwinwrap ; sleep 0.5 ; feh --bg-fill ~/Pictures/backgrounds/snowGirl.jpg"
     alias bgcherryblossom=" killall xwinwrap ; sleep 0.5 ; feh --bg-fill ~/Pictures/backgrounds/cherryblossom.jpg"
     alias bgluffy=" killall xwinwrap ; sleep 0.5 ; feh --bg-fill ~/Pictures/backgrounds/luffy.jpg"

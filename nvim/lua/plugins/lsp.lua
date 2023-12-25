@@ -17,7 +17,8 @@ return {
             'gopls',
             'cssls',
             'html',
-            'jedi_language_server'
+            'pyright',
+            -- 'jedi_language_server'
         })
 
         local cmp = require('cmp')

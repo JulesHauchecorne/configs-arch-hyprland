@@ -71,7 +71,7 @@ vim.keymap.set('n', '<leader>D', ':DBUI<CR>', opts)
 vim.cmd("silent autocmd FileType cpp nnoremap <buffer>  <leader>t  :terminal g++ %; ./a.out<CR>")
 vim.cmd("silent autocmd FileType c nnoremap <buffer>  <leader>t  :terminal gcc %; ./a.out<CR>")
 vim.cmd("silent autocmd FileType python nnoremap <buffer>  <leader>t  :terminal python3 %<CR>")
-vim.cmd("silent autocmd FileType java nnoremap <buffer>  <leader>t  :terminal javac %; java %<CR>")
+vim.cmd("silent autocmd FileType java nnoremap <buffer>  <leader>t  :terminal javac %; java %:r<CR>")
 -- vim.cmd("silent autocmd FileType cpp nnoremap <buffer>  <leader>m  :!make<CR>")
 -- vim.cmd("silent autocmd FileType c nnoremap <buffer>  <leader>m  :!make<CR>")
 
